@@ -139,11 +139,18 @@ body {
     font-family: 'Raleway';
     font-size: 16px;
     color: #2d2d2d;
-    font: #969696;
-    max-width: 1420px;
-    margin: 0;
-    padding: 0;
     }
+
+    
+h1 h2 h3 {
+    font-family: 'Playfair Display'
+}
+
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .header {
     font-family: 'Playfair Display';
@@ -207,7 +214,6 @@ body {
     .nav-bar {
         display: flex;
         flex-direction: row;
-        justify-content: ;
         align-items: flex-start;
         align-content: space-between;
         text-transform: uppercase;
@@ -281,40 +287,49 @@ body {
     align-content: flex-start;
     max-height: 100%;
     max-width: 100%;
-    flex-grow: 0;
+ 
+    
 }
-.item {
+.items  {
     max-height: 100%;
     max-width: 100%; 
     text-transform: uppercase;
-    
+    justify-content: center;    
 }
+
+.items p {
+    text-align: center;
+}
+
 .images {
     align-items: center;
     justify-content: center;
+    max-height: 100%;
+    max-width: 100%; 
+
 }
 
-.item:nth-child(n) {
-    background-image: url(images/mens-category.jpg);
+.mens {
+    background: url(images/mens-category.jpg);
     flex: 50%;
   }
-  .item:nth-child(2n) {
+  .trends {
      background-image: url(images/trends-category.jpg);
     flex: 25%;
   }
-  .item:nth-child(3n) {
+  .glasses {
     background-image: url(images/glasses-category.jpg);
     flex: 25%;
   }
-  .item:nth-child(4n) {
+  .sale {
     background-image: url(images/sale-category.jpg);
     flex: 25%;
   }
-  .item:nth-child(5n) {
+  .bags {
     background-image: url(images/bags-category.jpg);
     flex: 25%;
   }
-  .item:nth-child(6n) {
+  .woman {
     background-image: url(images/womens-category.jpg);
     flex: 50%;
   }
@@ -329,25 +344,28 @@ h3 {
   .most-loved-products {
     display: flex;
    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    align-content: space-around;
+    margin: 40px;
 }
     .description {
         color: red;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         
     }
     
-    .item .price {
+    .product .price {
         padding: 20px;
         justify-content: center;
-        align-content: center;
+        align-items: center;
     }
 
     .wave-banner {
         background: url(images/wave-bkgd.jpg) no-repeat bottom;
         height: 250px;
-        padding: 2%;
+        width: 100%;
         
     }
     .container-header {
@@ -363,10 +381,11 @@ h3 {
         padding: 3px;
         line-height: 30px;
     
-    h3 {
-        text-align: center;   
-    }
+    
 
+    }
+    h3{
+        text-align: center;   
     }
     .subscribe {
         border-radius: 4px;
