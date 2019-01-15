@@ -142,7 +142,7 @@ body {
     }
 
     
-h1 h2 h3 {
+h1, h2, h3 {
     font-family: 'Playfair Display'
 }
 
@@ -153,82 +153,59 @@ h1 h2 h3 {
 }
 
 .header {
+    display: flex;
     font-family: 'Playfair Display';
+    align-items: center;
+    text-align: center;
 }
 
 
-.site-header {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    align-items: baseline;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    }
     
-    .logo {
-        background-image: url(images/aloha-logo.svg) no-repeat left;
-        
+.logo {
+        flex:0 0 25%;
+}
     
-        height: 50px;
-        width: auto;
-        justify-content: center;
-        flex: 33%;
-        
-        padding-left: 15px;
-        }
-    
+.cart {
+    margin:auto;
+    flex:0 0 25%;
+    justify-content: flex-end;
+}
 
-    .nav-bar {
-        display: flex;
-        justify-content: center;
-        align-content: space-between;
-        text-transform: uppercase;
-       flex: 33%;
-    }
+nav {
+    text-transform: uppercase;
+    flex:0 0 50%;
+    flex:row wrap;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    padding:10px;
+}
    
 
+.nav-bar ul {
+    justify-content: center;
+}
+    
+    
+.nav-bar a {
+    text-align: center;
+    color: #e2574c;
+    text-decoration: none;
 
-    .cart {
-        display: flex;
-        background-image: url(images/cart-icon.svg) no-repeat right;
-        justify-content: flex-end;
-        align-content: center;
-        flex:1 0 25%;
-        flex-basis: auto;
-        flex: 33%;
-        padding-right: 15px;
-        padding-bottom: 5px;
-    }
+}
     
     
-    
-    
-    
-    .main-navigation {
-   justify-content: center;
-    
-    }
-    .nav-bar {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        align-content: space-between;
-        text-transform: uppercase;
-    }
-    
-    
-    .banner {
-        background: url(images/banner-girl.png)  no-repeat center, url(images/flower-bkgd.jpg) repeat-x;
+.banner {
+    background: url(images/banner-girl.png)  no-repeat center, url(images/flower-bkgd.jpg) repeat-x;
+    background-size: contain; 
     height: auto;
+   
+}
     
-    }
     
     
-    
-    .banner-text h1 {
+.banner-text h1 {
         text-align: center;
            color: white;
            vertical-align: middle;
@@ -240,7 +217,7 @@ h1 h2 h3 {
            text-transform: uppercase;
     }
     
-    .banner-text h2 {
+.banner-text h2 {
         text-align: center;
         font-weight: bold;
         margin: auto;
@@ -287,9 +264,13 @@ h1 h2 h3 {
     align-content: flex-start;
     max-height: 100%;
     max-width: 100%;
- 
-    
+      
 }
+.categories-container a {
+text-decoration: none;
+color: white;
+}
+
 .items  {
     max-height: 100%;
     max-width: 100%; 
@@ -412,7 +393,6 @@ h3 {
 
     .footer {
         display: flex;
-        background-color: black;
         box-sizing: border-box;
         text-align: center;
         flex-direction: row;
@@ -438,5 +418,13 @@ h3 {
     .socials ul li {
         text-align:   right;
         background-color: #242424
-        
+      
     }
+
+    @media all and (max-width: 720px) {
+        /* Targeted CSS goes here... */
+      }
+
+      @media all and (max-width: 480px) {
+        /* Targeted CSS goes here... */
+      }
