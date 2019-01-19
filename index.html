@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Aloha Apparel Co.</title>
-    <link href="2-style.css" type="text/css" rel="stylesheet" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -12,6 +12,10 @@
       crossorigin="anonymous"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
   </head>
   <!--                      BEGIN                   -->
 
@@ -48,14 +52,17 @@
     <!--                            BANNER             -->
     <section class="banner">
       <div class="banner-text heading">
-        <h1>Spring / Summer</h1>
-        <h2>New Collection 2016</h2>
+        <h2>New Collection</h2>
+        <h1>Spring / Summer 2016</h1>
       </div>
     </section>
     <!--                          HAND CRAFTED SECTION                 -->
 
     <section class="hand-crafted-container-header container">
-      <h3><em>Hand-Crafted</em><strong>Styles</strong></h3>
+      <h3>
+        <span class="hand-crafted">Hand-Crafted&nbsp </span>
+        <span class="styles"> Styles</span>
+      </h3>
       <p class="text">
         Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
         our <br /><br />
@@ -93,36 +100,69 @@
     <!--          MOST LOVED PRODUCTS       -->
 
     <div>
-      <h3><em>Most-Loved </em><strong> Products</strong></h3>
+      <h3>
+        <span class="most-loved">Most-Loved&nbsp</span>
+        <span class="products">Products</span>
+      </h3>
     </div>
 
     <section class="most-loved-products">
-      <div class="items">
-        <img src="images/checked-stretch-dress.jpg" alt="red dress" />
-        <p class="product">DRESS</p>
-        <p class="description">CHECKED STRETCH DRESS</p>
-        <P class="price">$129.00</P>
-      </div>
+      <div class="main-carousel">
+        <div class="items">
+          <img src="images/stretch-knit-dress.jpg" alt="knit dress" />
+          <P class="product">DRESSES</P>
+          <p class="description">KNIT DRESS</p>
+          <P class="price">$169.00</P>
+        </div>
 
-      <div class="items">
-        <img src="images/blue-hipster-backpack.jpg" alt="blue backpack" />
-        <P class="product">BAGS</P>
-        <p class="description">BLUE HIPSTER BACKPACK</p>
-        <P class="price">$69.00</P>
-      </div>
+        <div class="items">
+          <img src="images/cotton-blue-shirt.jpg" alt="blue shirt" />
+          <P class="product">SHIRT</P>
+          <p class="description">COTTON YELLOW SHIRT</p>
+          <P class="price">$89.00</P>
+        </div>
 
-      <div class="items">
-        <img src="images/demin-overall-shorts.jpg" alt="denim overall" />
-        <P class="product">DEMIN</P>
-        <p class="description">DEMIN OVERALL SHORTS</p>
-        <P>$89.00</P>
-      </div>
+        <div class="items">
+          <img src="images/checked-stretch-dress.jpg" alt="red dress" />
+          <p class="product">DRESS</p>
+          <p class="description">CHECKED STRETCH DRESS</p>
+          <P class="price">$129.00</P>
+        </div>
 
-      <div class="items">
-        <img src="images/pink-dotted-dress.jpg" alt="pink dress" />
-        <P class="product">DRESSES</P>
-        <p class="description">PINK DOTTED DRESS</p>
-        <P>$99.00</P>
+        <div class="items">
+          <img src="images/blue-hipster-backpack.jpg" alt="blue backpack" />
+          <P class="product">BAGS</P>
+          <p class="description">BLUE HIPSTER BACKPACK</p>
+          <P class="price">$69.00</P>
+        </div>
+
+        <div class="items">
+          <img src="images/demin-overall-shorts.jpg" alt="denim overall" />
+          <P class="product">DEMIN</P>
+          <p class="description">DEMIN OVERALL SHORTS</p>
+          <P class="price">$89.00</P>
+        </div>
+
+        <div class="items">
+          <img src="images/pink-dotted-dress.jpg" alt="pink dress" />
+          <P class="product">DRESSES</P>
+          <p class="description">PINK DOTTED DRESS</p>
+          <P class="price">$99.00</P>
+        </div>
+
+        <div class="items">
+          <img src="images/blue-silk-dress.jpg" alt="blue dress" />
+          <P class="product">DRESSES</P>
+          <p class="description">BLUE SILK DRESS</p>
+          <P class="price">$119.00</P>
+        </div>
+
+        <div class="items">
+          <img src="images/cotton-yellow-tshirt.jpg" alt="yellow shirt" />
+          <P class="product">SHIRT</P>
+          <p class="description">COTTON YELLOW SHIRT</p>
+          <P class="price">$39.00</P>
+        </div>
       </div>
     </section>
 
@@ -130,7 +170,8 @@
 
     <section class="wave-banner">
       <h3 class="container-header">
-        <em>Sign-up for</em> <strong>Updates</strong>
+        <span class="sign-up-for">Sign-up for&nbsp</span>
+        <span class="update"> Updates</span>
       </h3>
       <p class="updates">
         Stay updated on our product releases, be first to find out about <br />
@@ -139,13 +180,8 @@
       </p>
 
       <form class="form">
-        <input type="email" placeholder="Your email" />
-        <input
-          type="submit"
-          name="subscribe"
-          id="subscribe"
-          value="subscribe"
-        />
+        <input class="text-box" type="email" placeholder="Your email" />
+        <button class="submit" type="submit">Subscribe</button>
       </form>
     </section>
 
@@ -174,5 +210,8 @@
         </ul>
       </div>
     </footer>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="aloha.js"></script>
   </body>
 </html>
