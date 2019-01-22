@@ -22,12 +22,7 @@
   <body>
     <header class="site-header">
       <div class="logo">
-        <img
-          src="images/aloha-logo.svg"
-          alt="aloha logo"
-          width="150px"
-          height="160px"
-        />
+        <img src="images/aloha-logo.svg" alt="aloha logo" />
       </div>
 
       <nav class="main-navigation">
@@ -58,7 +53,7 @@
     </section>
     <!--                          HAND CRAFTED SECTION                 -->
 
-    <section class="hand-crafted-container-header container">
+    <section class="hand-crafted-container-header container" id="about">
       <h3>
         <span class="hand-crafted">Hand-Crafted&nbsp </span>
         <span class="styles"> Styles</span>
@@ -71,7 +66,7 @@
     </section>
     <!--         GALLERY         -->
 
-    <section class="categories-container">
+    <section class="categories-container" id="shop">
       <div class="mens">
         <span> <a href="#">men's</a> </span>
       </div>
@@ -106,58 +101,58 @@
       </h3>
     </div>
 
-    <section class="most-loved-products">
+    <section class="most-loved-products" id="featured">
       <div class="main-carousel">
-        <div class="items">
+        <div class="product-wrapper">
           <img src="images/stretch-knit-dress.jpg" alt="knit dress" />
           <P class="product">DRESSES</P>
           <p class="description">KNIT DRESS</p>
           <P class="price">$169.00</P>
         </div>
 
-        <div class="items">
+        <div class="product-wrapper">
           <img src="images/cotton-blue-shirt.jpg" alt="blue shirt" />
           <P class="product">SHIRT</P>
           <p class="description">COTTON YELLOW SHIRT</p>
           <P class="price">$89.00</P>
         </div>
 
-        <div class="items">
+        <div class="product-wrapper">
           <img src="images/checked-stretch-dress.jpg" alt="red dress" />
           <p class="product">DRESS</p>
           <p class="description">CHECKED STRETCH DRESS</p>
           <P class="price">$129.00</P>
         </div>
 
-        <div class="items">
+        <div class="product-wrapper">
           <img src="images/blue-hipster-backpack.jpg" alt="blue backpack" />
           <P class="product">BAGS</P>
           <p class="description">BLUE HIPSTER BACKPACK</p>
           <P class="price">$69.00</P>
         </div>
 
-        <div class="items">
+        <div class="product-wrapper">
           <img src="images/demin-overall-shorts.jpg" alt="denim overall" />
           <P class="product">DEMIN</P>
           <p class="description">DEMIN OVERALL SHORTS</p>
           <P class="price">$89.00</P>
         </div>
 
-        <div class="items">
+        <div class="product-wrapper">
           <img src="images/pink-dotted-dress.jpg" alt="pink dress" />
           <P class="product">DRESSES</P>
           <p class="description">PINK DOTTED DRESS</p>
           <P class="price">$99.00</P>
         </div>
 
-        <div class="items">
+        <div class="product-wrapper">
           <img src="images/blue-silk-dress.jpg" alt="blue dress" />
           <P class="product">DRESSES</P>
           <p class="description">BLUE SILK DRESS</p>
           <P class="price">$119.00</P>
         </div>
 
-        <div class="items">
+        <div class="product-wrapper">
           <img src="images/cotton-yellow-tshirt.jpg" alt="yellow shirt" />
           <P class="product">SHIRT</P>
           <p class="description">COTTON YELLOW SHIRT</p>
@@ -168,8 +163,8 @@
 
     <!--       WAVE BANNER         -->
 
-    <section class="wave-banner">
-      <h3 class="container-header">
+    <section class="wave-banner" id="updates">
+      <h3 class="updates-container-header">
         <span class="sign-up-for">Sign-up for&nbsp</span>
         <span class="update"> Updates</span>
       </h3>
@@ -188,25 +183,40 @@
     <br />
     <!--          FOOTER             -->
 
-    <footer class="footer">
-      <div class="info">
-        <p>&copy; 2019 Aloha Apparel Co.</p>
+    <footer class="footer-container">
+      <div class="footer">
+        <div class="info">
+          <p>&copy; 2019 Aloha Apparel Co.</p>
 
-        <p>Powered by HTML and CSS.</p>
-        <br />
-        <p>604-604-6040 &nbsp info@alohaapparel.com</p>
-        <br />
-        <p class="address">1490 W Broadway</p>
-        <p class="address">Vancouver, BC., Canada</p>
+          <p>Powered by HTML and CSS.</p>
+          <br />
+          <p>604-604-6040 &nbsp info@alohaapparel.com</p>
+          <br />
+          <p class="address">1490 W Broadway</p>
+          <p class="address">Vancouver, BC., Canada</p>
+        </div>
       </div>
-
       <div class="social">
         <ul class="socials">
-          <li><i class="fab fa-facebook-f"></i>Facebook</li>
-          <li><i class="fab fa-twitter"></i>Twitter</li>
-          <li><i class="fab fa-instagram"></i>Instagram</li>
-          <li><i class="fab fa-pinterest"></i>Pintrest</li>
-          <li><i class="fab fa-google-plus-g"></i>Google+</li>
+          <li>
+            <i class="fab fa-facebook-f"></i
+            ><span class="Facebook">Facebook</span>
+          </li>
+          <li>
+            <i class="fab fa-twitter"></i><span class="Twiter">Twitter</span>
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i
+            ><span class="Instagram">Instagram</span>
+          </li>
+          <li>
+            <i class="fab fa-pinterest"></i
+            ><span class="Pintrest">Pintrest</span>
+          </li>
+          <li>
+            <i class="fab fa-google-plus-g"></i
+            ><span class="Google+">Google+</span>
+          </li>
         </ul>
       </div>
     </footer>
